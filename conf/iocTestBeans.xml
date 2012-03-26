@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="byIndex" class="com.codemouse.ioc.test01.HelloWorldImpl">
+		<constructor-arg index="0" value="Hello World!"/>
+		<constructor-arg index="1" value="1"/>
+	</bean>
+	
+	<bean id="byType" class="com.codemouse.ioc.test01.HelloWorldImpl">
+		<constructor-arg type="java.lang.String" value="Hello World!"/>
+		<constructor-arg type="int" value="2"/>
+	</bean>
+	
+	<!--
+	<bean id="byName" class="com.codemouse.ioc.test01.HelloWorldImpl">
+		<constructor-arg name="message" value="Hello World"/>
+		<constructor-arg name="index" value="3"/>
+	</bean>
+	-->
+	
+</beans>

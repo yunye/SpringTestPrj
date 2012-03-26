@@ -1,4 +1,3 @@
-# a comment - this is ignored
-#*.bak       # no .bak files
-build/    # ignore all files in the build/ directory
-#.classpath # no .classpath file
+###################
+build/
+*.bak
